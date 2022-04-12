@@ -18,12 +18,18 @@ body {
 }
 
 .hamburger {
-position: absolute;
-top: 16px;
-right: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main {
-  max-width: 1000px;
-  margin: 60px auto 0;
+  margin: 70px auto 0;
+  @media (min-width: 768px) {
+    max-width: 1000px;
+    margin: 90px auto 0;
+  }
 }

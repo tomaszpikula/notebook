@@ -1,13 +1,22 @@
 .navigation {
     padding: 16px;
     display: none;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
     &__link {
         color: white;
         background: red;
         display: block;
         padding: 8px;
         border-bottom: solid 2px black;
-    }
+        @media (min-width: 768px) {
+            display: inline-block;
+            margin-right: 20px;
+            }
+        }
     &--open {
         display: block;
     }
