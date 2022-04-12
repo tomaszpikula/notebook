@@ -1,0 +1,14 @@
+.navigation {
+    padding: 16px;
+    display: none;
+    &__link {
+        color: white;
+        background: red;
+        display: block;
+        padding: 8px;
+        border-bottom: solid 2px black;
+    }
+    &--open {
+        display: block;
+    }
+}
