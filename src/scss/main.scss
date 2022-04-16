@@ -9,6 +9,13 @@ body {
   min-height: 100vh;
 }
 
+.grid {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .header {
   min-height: 60px;
   position: fixed;
