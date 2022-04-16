@@ -1,27 +1,31 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/navigation.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #E2DDD3;
+  color: #000;
+  font-family: 'Lato', sans-serif;
   min-height: 100vh;
 }
 
 .grid {
   @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    row-gap: 4px;
   }
 }
 
 .header {
+  background: #7D7B7A;
   min-height: 60px;
   position: fixed;
   top: 0;
   width: 100%;
-  background: green;
 }
 
 .hamburger {
@@ -33,10 +37,24 @@ body {
   }
 }
 
+.knowledge {
+  border: #000 1px solid;
+  &__description {
+    padding: 8px;
+  }
+}
+
 .main {
   margin: 70px auto 0;
+  background: #fff;
+  padding: 8px;
+  text-align: center;
   @media (min-width: 768px) {
     max-width: 1000px;
     margin: 90px auto 0;
+  }
+  &__heading {
+    padding: 8px;
+    text-align: center;
   }
 }
