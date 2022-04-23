@@ -46,9 +46,11 @@ body {
 }
 
 .knowledge {
-  border: #000 1px solid;
+  margin: 8px 0;
   min-height: 100px;
   display: flex;
+  border-radius: 8px;
+  background: lightgray;
   &__heading {
     margin: auto;
     padding: 16px;
@@ -77,6 +79,25 @@ body {
     border: 1px solid gray;
     border-radius: 6px;
     min-width: 100px;
+    background: white;
+    &--html {
+      background: $htmlOrange;
+    }
+    &--css {
+      background: $cssBlue;
+    }
+    &--js {
+      background: $jsYellow;
+    }
+  }
+  &--css {
+    background: $cssBlueLight;
+  }
+  &--html {
+    background: $htmlOrangeLight;
+  }
+  &--js {
+    background: $jsYellowLight;
   }
 }
 
