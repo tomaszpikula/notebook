@@ -22,10 +22,18 @@ body {
 
 .header {
   background: #7D7B7A;
-  min-height: 60px;
+  min-height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
+  &__heading {
+    margin:0;
+    padding: 40px 8px 8px;
+    text-align: center;
+    @media (min-width: 768px) {
+    padding-top: 16px;
+  }
+}
 }
 
 .hamburger {
@@ -45,16 +53,12 @@ body {
 }
 
 .main {
-  margin: 70px auto 0;
+  margin: 100px auto 0;
   background: #fff;
   padding: 8px;
   text-align: center;
   @media (min-width: 768px) {
-    max-width: 1000px;
-    margin: 90px auto 0;
-  }
-  &__heading {
-    padding: 8px;
-    text-align: center;
+    max-width: 1200px;
+    margin: 120px auto 0;
   }
 }
