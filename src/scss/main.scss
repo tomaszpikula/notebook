@@ -45,12 +45,15 @@ body {
   }
 }
 
+.introduction {
+  min-height: 100vh;
+}
+
 .knowledge {
   margin: 8px 0;
   min-height: 100px;
   display: flex;
   border-radius: 8px;
-  background: lightgray;
   &__heading {
     margin: auto;
     padding: 16px;
@@ -92,12 +95,27 @@ body {
   }
   &--css {
     background: $cssBlueLight;
+    transition: 1s;
+    transform: translateX(-20vw);
+    opacity: 0.5;
   }
   &--html {
     background: $htmlOrangeLight;
+    transition: 1s;
+    transform: translateX(20vw);
+    opacity: 0.5;
   }
   &--js {
     background: $jsYellowLight;
+    transition: 1s;
+    transform: translateX(20vw);
+    opacity: 0.5;
+  }
+  &--other {
+    background: gray;
+    transition: 1s;
+    transform: translateX(-20vw);
+    opacity: 0.5;
   }
 }
 
@@ -111,3 +129,14 @@ body {
     margin: 120px auto 0;
   }
 }
+
+.summary {
+  overflow: hidden;
+}
+
+.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
