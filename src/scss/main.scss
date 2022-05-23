@@ -3,6 +3,7 @@
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/navigation.scss";
+@import "modules/tasks.scss";
 
 body {
   background: #E2DDD3;
@@ -143,6 +144,7 @@ body {
   text-align: center;
   @media (min-width: 768px) {
     max-width: 1920px;
+    min-height: 100vh;
   }
 }
 
